@@ -8,6 +8,7 @@ class Trainer():
         self._pokemons = [poke1, poke2, poke3,poke4]#list
         self._thirdPoke= poke3
         self._fourthPoke= poke4
+        self._mood = "Happy"
         
         
     def getFirstPoke(self):
@@ -26,6 +27,8 @@ class Trainer():
         return self._status
     def getPokemons(self):
         return self._pokemons 
+    def getMood(self):
+        return self._mood
     
     def setFirstPoke(self, poke):
         self._firstPoke = poke
@@ -45,6 +48,8 @@ class Trainer():
         self._currentPoke = poke
     def setStatus(self, newStatus):
         self._status = newStatus
+    def setMood(self, newMood):
+        self._mood = newMood
 
         
         
