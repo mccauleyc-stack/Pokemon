@@ -7,54 +7,59 @@ import random
 import copy
 
 class Battle():
-    def __init__(self, p1Pokemons, p2Pokemons):
-        self._p1Pokemon = p1Pokemons
-        self._p2Pokemon = p2Pokemons
-        
+    def __init__(self, t1Pokemon, t2Pokemon):
+        self._t1Pokemon = t1Pokemon #list of 6
+        self._t2Pokemon = t2Pokemon #list of 6
     #getters    
-    def getP1pokemon(self):
-        return self._p1Pokemon #list
-    def getP2pokemon(self):
-        return self._p2Pokemon #list
+    def getT1pokemon(self):
+        return self._t1Pokemon #list
+    def getT2pokemon(self):
+        return self._t2Pokemon #list
     
     #setters 
-    def setP1Pokemon(self, newPokemon): #list
+    def setT1Pokemon(self, newPokemon): #list
         self._p1Pokemon = newPokemon        
-    def setP2Pokemon(self, newPokemon): #list
+    def setT2Pokemon(self, newPokemon): #list
         self._p2Pokemon = newPokemon
     
     #helper functions
-    # edit to be able to choose the 4 pokemons
-    def choosePokemonOrder(self, trainer, pokemons):# 1 or 2 , player's pokemons (list)
-        inaccurate = False                                                                                                                                                      
-        while inaccurate == False:                                                                                                                                              
-            try:                                                                                                                                                                
-                currentPokenumber = int(input(f"{trainer.getName()}, what Pokemon will you use first? \nType in 1 for {pokemons[0].getName()} or 2 for {pokemons[1].getName()} or 3 for {pokemons[2].getName()} or 4 for {pokemons[3].getName()}: "))   
-                if int(currentPokenumber) == 1:
-                    inaccurate = True  
-                elif int(currentPokenumber) == 2:
-                    trainer._currentPoke = pokemons[1]                                                                                                                       
-                    trainer._firstPoke = pokemons[1]                                                                                                                         
-                    trainer._secondPoke = pokemons[0]
-                    trainer._thirdPoke = pokemons[2] 
-                    trainer._fourthPoke = pokemons[3]
-                    inaccurate = True   
-                elif int(currentPokenumber) == 3:
-                    trainer._currentPoke = pokemons[2] 
-                    trainer._firstPoke = pokemons[2]
-                    trainer._secondPoke = pokemons[0] 
-                    trainer._thirdPoke = pokemons[1]
-                    trainer._fourthPoke = pokemons[3]
-                    inaccurate = True 
-                elif int(currentPokenumber) == 4:   
-                    trainer._currentPoke = pokemons[3] 
-                    trainer._firstPoke = pokemons[3]
-                    trainer._secondPoke = pokemons[0] 
-                    trainer._thirdPoke = pokemons[1]
-                    trainer._fourthPoke = pokemons[2]
-                    inaccurate = True             
-            except:
-                print("Please type either 1, 2, 3 or 4")                                                                                                                     
+    def choosePokemon(self, trainer1, trainer2):        
+                                                                                                    
+        self.choosePokemonOrder(trainer1)                                               
+        print("")                                                                                   
+        self.choosePokemonOrder(trainer2)                                               
+        print("")                                                                                   
+        print(f"{trainer1.getName()} sends out {trainer1.GetCurrentPokemon().getName()}!")                 
+        print(f"{trainer2.getName()} sends out {trainer2.GetCurrentPokemon().getName()}!")                 
+          
+    #does not work, will modify with GUIs                                                                                                
+    def choosePokemonOrder(self, trainer):
+        pokemon = trainer.getPokemon()
+        
+        for i in range(6): #will run from 0 to 5 (# of pokemon)  
+            inaccurate = False                                                                                                                                                      
+            while inaccurate == False:                                                                                                                                              
+                try:                                                                                                                                                                
+                    number = int(input(f"{trainer.getName()}, what Pokemon will you use first? \nType 1 for {pokemon[0].getName()},\nor 2 for {pokemon[1].getName()},\nor 3 for {pokemon[2].getName()}, \nor 4 for {pokemon[3].getName()}, \nor 5 for {pokemon[4].getName()}, \nor 6 for {pokemon[5].getName()}: \n"))   
+                    if number == 1:
+                        inaccurate = True  
+                    elif number == 2:
+                        trainer.setCurrentPokemon(pokemon[1])                                                                                                                                                                                                                                    
+                        inaccurate = True   
+                    elif number == 3:
+                        trainer.setCurrentPokemon(pokemon[2])     
+                        inaccurate = True 
+                    elif number == 4:   
+                        trainer.setCurrentPokemon(pokemon[3]) 
+                        inaccurate = True 
+                    elif number == 5:                          
+                        trainer.setCurrentPokemon(pokemon[4])     
+                        inaccurate = True                      
+                    elif number == 6:                          
+                        trainer.setCurrentPokemon(pokemon[5]) 
+                        inaccurate = True                                  
+                except:
+                    print("Please type either 1, 2, 3, 4, 5 or 6")                                                                                                                     
         
     def compareSpeeds(self, speed1, speed2): 
         if speed1 > speed2:
@@ -67,16 +72,18 @@ class Battle():
                 return True
             elif chance == 1:
                 return False       
-    
+    #does not work, will modify with move class
     def chooseMove(self, trainer):                                                                           
             while True:     
                 print("")                                                               
-                print(f"{trainer.getName()}, what will {trainer._currentPoke.getName()} do?")         
-                print(f"{trainer._currentPoke.getAttackNames()}")                                      
+                print(f"{trainer.getName()}, what will {trainer.getCurrentPokemon().getName()} do?")         
+                print(f"{trainer.getCurrentPokemon().getAttackNames()}")                                      
                 try:                                                                                   
-                    userInput = int(input("Type in 1, 2 or 3 for the corresponding moves:"))            
-                    pokemonMove = trainer._currentPoke.getAttackNames()[userInput-1]                       
-                    moveDmg = trainer._currentPoke.getAttackDmg()[userInput-1]
+                    userInput = int(input("Type in 1, 2 or 3 for the corresponding moves:")) 
+                    #Attack names no longer exists           
+                    pokemonMove = trainer.getCurrentPokemon().getAttackNames()[userInput-1]  
+                    #Get attack damage no longer exists                      
+                    moveDmg = trainer.getCurrentPokemon().getAttackDmg()[userInput-1]
                     if (userInput == 1) or (userInput == 2) or (userInput == 3):                              
                         return pokemonMove, moveDmg                                                                                                                                                                 
                 except IndexError:
@@ -85,23 +92,23 @@ class Battle():
                     print("Type in a valid number: 1, 2 or 3")
                                
     def checkAlive(self, trainer):
-        if ( trainer._firstPoke.getCurrentHealth() == 0 ) and ( trainer._secondPoke.getCurrentHealth() == 0 ) and ( trainer._thirdPoke.getCurrentHealth() == 0 ) and ( trainer._fourthPoke.getCurrentHealth() == 0 ):
-            #print(f"{trainer._currentPoke.getName()} fainted!")
+        if ( trainer.getPokemon()[0].getCurrentHP() == 0 ) and ( trainer.getPokemon()[1].getCurrentHP() == 0 ) and ( trainer.getPokemon()[2].getCurrentHP() == 0 ) and ( trainer.getPokemon()[3].getCurrentHP() == 0 ) and ( trainer.getPokemon()[4].getCurrentHP() == 0 ) and ( trainer.getPokemon()[5].getCurrentHP() == 0 ):
+            #print(f"{trainer._currentPokemon.getName()} fainted!")
             trainer.setStatus(False)
             return
-            
-        elif trainer._currentPoke.getCurrentHealth() == 0:
-            #print(f"{trainer._currentPoke.getName()} fainted!")
-            for pokemon in trainer.getPokemons():
+        elif trainer.getCurrentPokemon().getCurrentHP() == 0:
+            #print(f"{trainer._currentPokemon.getName()} fainted!")
+            for pokemon in trainer.getPokemon():
                 if pokemon.getCurrentHealth()>0:
                     trainer.setCurrentPoke(pokemon)
-                    print(f"{trainer.getName()} uses {trainer._currentPoke.getName()}!")
+                    print(f"{trainer.getName()} uses {trainer.getCurrentPokemon().getName()}!")
                     print("")
                     break
+            
     def showHP(self, trainer):
-        print(f"{trainer._currentPoke.getName()} has {trainer._currentPoke.getCurrentHealth()} health left out of {trainer._currentPoke.getMaxHealth()}")
+        print(f"{trainer.getCurrentPokemon().getName()} has {trainer.CurrentPokemon().getCurrentHP()} out of {trainer.getCurrentPokemon.getMaxP()} health left!")
         
-#modify so you can choose any of the 4 pokemons        
+    #does not work, will modify with GUIs 
     def changePokemon(self, trainer):
         UserInput = input(f"{trainer.getName()}, do you wish to change your pokemon? If yes, type !: ")
         if UserInput == "!":
@@ -118,16 +125,8 @@ class Battle():
                 print("Type in a valid number")
             except ValueError: 
                 print("Type in a valid number")                
-              
-    def choosePokemon(self, trainer1, trainer2, p1Pokemons, p2Pokemons): #last two are lists
-        
-        self.choosePokemonOrder(trainer1, p1Pokemons)
-        print("")
-        self.choosePokemonOrder(trainer2, p2Pokemons)
-        print("")
-        print(f"{trainer1.getName()} sends out {trainer1._currentPoke.getName()}!")                                                                                                              
-        print(f"{trainer2.getName()} sends out {trainer2._currentPoke.getName()}!") 
-           
+     
+     #does not work         
     def battle(self, trainer1, trainer2): 
         
         while (trainer1.getStatus() == True) and (trainer2.getStatus() == True) :   
@@ -148,7 +147,7 @@ class Battle():
                 print(trainer1._currentPoke.takeDmg(p2Dmg , trainer2._currentPoke))
                 self.checkAlive(trainer1)
                 self.showHP(trainer1)
-                #Asking trainers if they want to switch pokemons 
+                #Asking trainers if they want to switch pokemon 
                 self.changePokemon(trainer1)
                 self.changePokemon(trainer2)
                 
@@ -166,7 +165,7 @@ class Battle():
                 print(trainer2._currentPoke.takeDmg(p1Dmg , trainer1._currentPoke))
                 self.checkAlive(trainer2)
                 self.showHP(trainer2)
-                #Asking trainers if they want to switch pokemons 
+                #Asking trainers if they want to switch pokemon
                 self.changePokemon(trainer2)
                 self.changePokemon(trainer1)
                 
