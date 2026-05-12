@@ -9,13 +9,13 @@ class Normal(Pokemon):
     def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
         super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
                                                                                                                                  
-        self._doubleDamageTo =                                                                                                   
-        self._halfDamageTo =                                                                                                     
-        self._noDamageTo =                                                                                                       
+        self._doubleDamageTo = []                                                                                                 
+        self._halfDamageTo = ["Rock", "Steel"]                                                                                                   
+        self._noDamageTo = ["Ghost"]                                                                                                     
                                                                                                                                  
-        self._doubleDamageFrom =                                                                                                 
-        self._halfDamageFrom =                                                                                                   
-        self._noDamageFrom =                                                                                                     
+        self._doubleDamageFrom = ["Fighting"]                                                                                                
+        self._halfDamageFrom = []                                                                                                
+        self._noDamageFrom = ["Ghost"]                                                                                                 
                                                                                                                                  
     #toString                                                                                                                    
     def __str__(self):                                                                                                           

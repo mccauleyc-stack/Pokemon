@@ -9,13 +9,13 @@ class Steel(Pokemon):
     def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
         super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
                                                                                                                                  
-        self._doubleDamageTo =                                                                                                   
-        self._halfDamageTo =                                                                                                     
-        self._noDamageTo =                                                                                                       
+        self._doubleDamageTo = ["Rock", "Ice", "Fairy"]                                                                                                  
+        self._halfDamageTo = ["Steel", "Fire", "Water", "Electric"]                                                                                                   
+        self._noDamageTo = []                                                                                                       
                                                                                                                                  
-        self._doubleDamageFrom =                                                                                                 
-        self._halfDamageFrom =                                                                                                   
-        self._noDamageFrom =                                                                                                     
+        self._doubleDamageFrom = ["Fighting", "Ground", "Fire"]                                                                                               
+        self._halfDamageFrom = ["Normal", "Flying", "Rock", "Bug", "Steel", "Grass", "PSychic", "Ice"]                                                                                                 
+        self._noDamageFrom = ["Posion"]                                                                                                   
                                                                                                                                  
     #toString                                                                                                                    
     def __str__(self):                                                                                                           

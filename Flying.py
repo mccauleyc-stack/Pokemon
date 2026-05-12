@@ -9,13 +9,13 @@ class Flying(Pokemon):
     def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
         super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
                                                                                                                                  
-        self._doubleDamageTo =                                                                                                   
-        self._halfDamageTo =                                                                                                     
-        self._noDamageTo =                                                                                                       
+        self._doubleDamageTo = ["Fighting", "Bug", "Grass"]                                                                                                 
+        self._halfDamageTo = ["Rock", "Steel", "Electric"]                                                                                                 
+        self._noDamageTo = []                                                                                                      
                                                                                                                                  
-        self._doubleDamageFrom =                                                                                                 
-        self._halfDamageFrom =                                                                                                   
-        self._noDamageFrom =                                                                                                     
+        self._doubleDamageFrom = ["Rock", "Electric", "Ice"]                                                                                               
+        self._halfDamageFrom = ["Fighting", "Bug", "Grass"]                                                                                                 
+        self._noDamageFrom = ["Ground"]                                                                                                   
                                                                                                                                  
     #toString                                                                                                                    
     def __str__(self):                                                                                                           
