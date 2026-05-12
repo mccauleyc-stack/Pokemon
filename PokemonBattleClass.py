@@ -35,7 +35,7 @@ class Battle():
     #does not work, will modify with GUIs                                                                                                
     def choosePokemonOrder(self, trainer):
         pokemon = trainer.getPokemon()
-        
+      
         for i in range(6): #will run from 0 to 5 (# of pokemon)  
             inaccurate = False                                                                                                                                                      
             while inaccurate == False:                                                                                                                                              

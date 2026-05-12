@@ -9,13 +9,13 @@ class Poison(Pokemon):
     def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
         super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
                                                                                                                                  
-        self._doubleDamageTo =                                                                                                   
-        self._halfDamageTo =                                                                                                     
-        self._noDamageTo =                                                                                                       
+        self._doubleDamageTo = ["Grass", "Fairy"]                                                                                                   
+        self._halfDamageTo = ["Poison", "Ground", "Rock", "Ghost"]                                                                                                    
+        self._noDamageTo = ["Steel"]                                                                                                   
                                                                                                                                  
-        self._doubleDamageFrom =                                                                                                 
-        self._halfDamageFrom =                                                                                                   
-        self._noDamageFrom =                                                                                                     
+        self._doubleDamageFrom = ["Ground", "Psychic"]                                                                                              
+        self._halfDamageFrom = ["Fighting", "Poison", "Bug", "Grass", "Fairy"]                                                                                                 
+        self._noDamageFrom = []                                                                                                
                                                                                                                                  
     #toString                                                                                                                    
     def __str__(self):                                                                                                           
