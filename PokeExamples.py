@@ -12,7 +12,7 @@ def findIndex(inputList, value):
     for i in range(length):
         if inputList[i] == value:
             return i
-
+#test comment to test firewall
 
 #Steel types
 lucario = Steel("Lucario")

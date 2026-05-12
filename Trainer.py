@@ -1,50 +1,65 @@
 class Trainer():
-    def __init__(self, name, poke1, poke2,poke3,poke4, status = True):
+    def __init__(self, name, pokemon): #pokemon is a list of 6 pokemon
         self._name = name
-        self._firstPoke = poke1
-        self._secondPoke = poke2
-        self._currentPoke = poke1
-        self._status = status
-        self._pokemons = [poke1, poke2, poke3,poke4]#list
-        self._thirdPoke= poke3
-        self._fourthPoke= poke4
+        self._pokemon = pokemon
+        self._currentPokemon = pokemon[0]
+        self._status = True
         
+        #toString                                     
+    def __str__(self):                            
+        return f"{self._name},  {self._pokemon}"       
         
-    def getFirstPoke(self):
-        return self._firstPoke
-    def getSecondPoke(self):
-        return self._secondPoke
-    def getThirdPoke(self):
-        return self._thirdPoke   
-    def getFourthPoke(self):
-        return self._fourthPoke
-    def getName(self):
-        return self._name
-    def getCurrentPoke(self):
-        return self._currentPoke
+        #getters
+    def getName(self):   
+        return self._name   
+    def getPokemon(self):
+        return self._pokemon #list of 6
+    def getCurrentPokemon(self):
+        return self._currentPokemon
     def getStatus(self):
         return self._status
-    def getPokemons(self):
-        return self._pokemons 
+    def getFirstPokemon(self):  
+        return self._pokemon[0]      
+    def getSecondPokemon(self):    
+        return self._pokemon[1]     
+    def getThirdPokemon(self):     
+        return self._pokemon[2]      
+    def getFourthPokemon(self):    
+        return self._pokemon[3]      
+    def getFifthPokemon(self):     
+        return self._pokemon[4]     
+    def getSixthPokemon(self):     
+        return self._pokemon[5]      
+                                            
+     
+        
+        #setters
+    def setName(self, name):                           
+        self._name = name                              
+    def setPokemon(self, newPokemon):                  
+        self._pokemon = newPokemon                     
+    def setCurrentPokemon(self, newCurrentPokemon):    
+        self._currentPokemon = newCurrentPokemon       
+    def setStatus(self, newStatus): #boolean           
+        self._status = newStatus                           
+   
+    def setFirstPokemon(self, newPokemon):
+        self._pokemon[0] = newPokemon
+    def setSecondPokemon(self, newPokemon):
+        self._pokemon[1] = newPokemon
+    def setThirdPokemon(self, newPokemon):
+        self._pokemon[2] = newPokemon
+    def setFourthPokemon(self, newPokemon):
+        self._pokemon[3] = newPokemon
+    def setFifthPokemon(self, newPokemon):
+        self._pokemon[4] = newPokemon  
+    def setSixthPokemon(self, newPokemon):   
+        self._pokemon[5] = newPokemon  
     
-    def setFirstPoke(self, poke):
-        self._firstPoke = poke
-        self._pokemons[0]=poke
-    def setSecondPoke(self, poke):
-        self._secondPoke = poke
-        self._pokemons[1]=poke
-    def setThirdPoke(self, poke):
-        self._thirdPoke = poke
-        self._pokemons[2]=poke
-    def setFourthPoke(self, poke):
-        self._fourthPoke = poke
-        self._pokemons[3]=poke
-    def setName(self, name):
-        self._name = name
-    def setCurrentPoke(self, poke):
-        self._currentPoke = poke
-    def setStatus(self, newStatus):
-        self._status = newStatus
+    #helperFunctions
+
+
+
 
         
         
