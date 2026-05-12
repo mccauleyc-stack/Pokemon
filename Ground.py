@@ -9,13 +9,13 @@ class Ground(Pokemon):
     def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
         super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
                                                                                                                                  
-        self._doubleDamageTo =                                                                                                   
-        self._halfDamageTo =                                                                                                     
-        self._noDamageTo =                                                                                                       
+        self._doubleDamageTo = ["Poison", "Rock", "Steel", "Fire", "Electric"]                                                                                                  
+        self._halfDamageTo = ["Bug", "Grass"]                                                                                                   
+        self._noDamageTo = ["Flying"]                                                                                                      
                                                                                                                                  
-        self._doubleDamageFrom =                                                                                                 
-        self._halfDamageFrom =                                                                                                   
-        self._noDamageFrom =                                                                                                     
+        self._doubleDamageFrom = ["Water", "Grass", "Ice"]                                                                                                 
+        self._halfDamageFrom = ["Poison", "Rock"]                                                                                           
+        self._noDamageFrom = ["Electric"]                                                                                             
                                                                                                                                  
     #toString                                                                                                                    
     def __str__(self):                                                                                                           
