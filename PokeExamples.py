@@ -21,13 +21,14 @@ honedge = Steel("Honedge")
 doublade = Steel("Doublade")
 aegislash = Steel("Aegislash")
 aron = Steel("Aron")
+excadrill = Steel("Excadrill")
 lairon = Steel("Lairon")
 aggron = Steel("Aggron")
 meltan = Steel("Meltan")
 melmetal = Steel("Melmetal")
 registeel = Steel("Registeel")
 
-steeltypes = [lucario,steelix,honedge, doublade,aegislash,aron,lairon, aggron, meltan, melmetal, registeel]
+steeltypes = [lucario,steelix,honedge, doublade,aegislash,aron,lairon, aggron, meltan, melmetal, registeel, excadrill]
 
 #Rock types
 geodude = Rock("Geodude")
@@ -102,7 +103,7 @@ icetypes = [cloyster, swinub, piloswine, spheal, sealeo, walrein, snover, abomas
 icepokemanNames = []
 allpokemonNames = []
 
-allpokemon = [cloyster, swinub, piloswine, spheal, sealeo, walrein, snover, abomasnow, beartic, mamoswine, articuno, voltorb, electrode, shinx, luxio, luxray, electrike, manectric, rotom, electabuzz, ampharos, zapdos, arcanine, growlithe, vulpix, nintetales, charmander, charmeleon, charizard, fuecoco, crocalor, skeledirge, moltres, squirtle, wartortle, blastoise, poliwag, poliwhirl, poliwrath, magikarp, gyarados, tentacool, tentacruel, kyogre, geodude, graveler, golem, onix, kabuto, kabutops, tyrunt, tyrantrum, sudowoodo, aerodactyl, regirock, lucario,steelix,honedge, doublade,aegislash,aron,lairon, aggron, meltan, melmetal, registeel]
+allpokemon = [cloyster, swinub, piloswine, spheal, sealeo, walrein, snover, abomasnow, beartic, mamoswine, articuno, voltorb, electrode, shinx, luxio, luxray, electrike, manectric, rotom, electabuzz, ampharos, zapdos, arcanine, growlithe, vulpix, nintetales, charmander, charmeleon, charizard, fuecoco, crocalor, skeledirge, moltres, squirtle, wartortle, blastoise, poliwag, poliwhirl, poliwrath, magikarp, gyarados, tentacool, tentacruel, kyogre, geodude, graveler, golem, onix, kabuto, kabutops, tyrunt, tyrantrum, sudowoodo, aerodactyl, regirock, lucario,steelix,honedge, doublade,aegislash,aron,lairon, aggron, meltan, melmetal, registeel, excadrill]
 
 for pokemon in icetypes:
     icepokemanNames.append(pokemon.getName())
