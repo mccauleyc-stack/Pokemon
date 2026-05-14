@@ -8,7 +8,7 @@ from abc import abstractmethod
 class Pokemon():
 
     #constructor magic functions
-    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, moves): #last four are integers
+    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, description):
         self._name = name
         self._maxHP = maxHP
         self._speed = speed
@@ -16,12 +16,13 @@ class Pokemon():
         self._specialAttack = specialAttack
         self._defense = defense
         self._specialDefense = specialDefense
-        self._moves = moves #list
+        self._moves = [] #list
+        self._description = description
         
         self._currentHP = self._maxHP
         self._level = 1 
          
-    #toString
+    #toString  
     def __str__(self):
         return f"{self._name},  {self._level}"
     
@@ -57,7 +58,10 @@ class Pokemon():
         pass
     @abstractmethod   
     def getStrengths(self):    
-        pass           
+        pass      
+    def getDescription(self):
+        return self._description
+         
     
         #setters
     def setName(self, newName):
@@ -80,6 +84,8 @@ class Pokemon():
         self._currentHP = newCurrentHP       
     def setLevel(self, newLevel):
         self._level = newLevel
+    def setDescription(self, newDescription):
+        self._description = newDescription
         
         #helper functions   
     def slow(self, slow): #change this function

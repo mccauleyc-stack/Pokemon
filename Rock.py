@@ -1,8 +1,8 @@
 import random
 from PokemonClass import Pokemon 
 class Rock(Pokemon):
-    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):
-        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)
+    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, description):
+        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, description)
         
         self._doubleDamageTo = ["Flying", "Bug", "Fire", "Ice"]
         self._halfDamageTo = ["Fighting", "Ground", "Steel"]
