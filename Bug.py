@@ -6,8 +6,8 @@ Created on May 4, 2026
 import random                                                                                                                    
 from PokemonClass import Pokemon                                                                                                 
 class Bug(Pokemon):                                                                                                             
-    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
-        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
+    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, description): 
+        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, description)            
                                                                                                                                  
         self._doubleDamageTo = ["Grass", "Psychic", "Dark"]                                                                                                  
         self._halfDamageTo = ["Fighting", "Flying", "Poison", "Ghost", "Steel", "Fire", "Fairy"]                                                                                                    
@@ -80,4 +80,8 @@ class Bug(Pokemon):
             if (self._currentHealth <= 0):                                                                                       
                 self.setCurrentHealth(0)                                                                                         
                 return f"{self._name} took {dmg} damage. \n{self._name} fainted!."                                               
-            return f"{self._name} took {dmg} damage."                                                                            
+            return f"{self._name} took {dmg} damage."                         
+
+ribombee = Bug("Ribombee", 20, 20, 20, 20, 20, 20, 20)  
+print(ribombee.getName())        
+                                   
