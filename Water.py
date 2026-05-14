@@ -6,8 +6,8 @@ Created on May 4, 2026
 import random                                                                                                                    
 from PokemonClass import Pokemon                                                                                                 
 class Water(Pokemon):                                                                                                             
-    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves):             
-        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, currentHP, level, moves)            
+    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, description):             
+        super().__init__(name, maxHP, speed, attack, specialAttack, defense, specialDefense, description)            
                                                                                                                                  
         self._doubleDamageTo = ["Ground", "Rock", "Fire"]                                                                                                 
         self._halfDamageTo = ["Water", "Grass", "Dragon"]                                                                                                   
