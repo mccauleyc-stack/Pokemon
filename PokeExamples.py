@@ -13,7 +13,6 @@ def findIndex(inputList, value):
     for i in range(length):
         if inputList[i] == value:
             return i
-#Just testing a comment
 
 #Steel types
 lucario = Steel("Lucario")

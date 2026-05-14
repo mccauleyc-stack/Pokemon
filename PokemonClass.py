@@ -8,81 +8,89 @@ from abc import abstractmethod
 class Pokemon():
 
     #constructor magic functions
-    def __init__(self, name, level = 1):
+    def __init__(self, name, maxHP, speed, attack, specialAttack, defense, specialDefense, moves): #last four are integers
         self._name = name
-        self._level = level
-        self._maxHealth = 1
-        self._currentHealth = self._maxHealth
-        self._speed = 1
-        self._weakness = []
-        self._strength = []
-    
-        self._attackNames = [] #parrallel lists
-        self._attackDmg = []
+        self._maxHP = maxHP
+        self._speed = speed
+        self._attack = attack
+        self._specialAttack = specialAttack
+        self._defense = defense
+        self._specialDefense = specialDefense
+        self._moves = moves #list
         
+        self._currentHP = self._maxHP
+        self._level = 1 
+         
     #toString
     def __str__(self):
-        return f"{self._name}  {self._level}"
+        return f"{self._name},  {self._level}"
     
-    def printName(self ):
+    def printName(self):
         print(self._name)
 
         #getters
     def getName(self):
-        return self._name
-
-    @abstractmethod
-    def getType(self):
-        pass
-    
-    def getLevel(self):
-        return self._level
-    def getMaxHealth(self):
-        return self._maxHealth
-    def getCurrentHealth(self):
-        return self._currentHealth
+        return self._name 
+    def getMaxHP(self):
+        return self._maxHP
     def getSpeed(self):
-        return self._speed
-    def getWeakness(self):
-        return self._weakness
-    def getStrength(self):
-        return self._strength
-        
-    def getAttackNames(self):
-        return self._attackNames
-    
-    def getAttackDmg(self):
-        return self._attackDmg
-    
+        return self._speed 
+    def getAttack(self):
+        return self._attack
+    def getSpecialAttack(self):
+        return self._specialAttack
+    def getDefense(self):
+        return self._defense
+    def specialDefense(self):
+        return self._specialDefense
+    def getMoves(self): #returns list    
+        return self._moves                                    
+    def getCurrentHP(self):     
+        return self._currentHP  
+    def getLevel(self):    
+        return self._level 
+    @abstractmethod   
+    def getType(self):
+        pass 
+    @abstractmethod 
+    def getWeaknesses(self):   
+        pass
+    @abstractmethod   
+    def getStrengths(self):    
+        pass           
     
         #setters
-    def setName(self, name):
-        self._name = name
-    def setLevel(self, level):
-        self._level = level
-    def setPokeType(self, pokeType):
-        self._pokeType = pokeType
-    def setMaxHealth(self, maxHealth):
-        self._maxHealth = maxHealth
-    def setCurrentHealth(self, health):
-        self._currentHealth = health
-    def setSpeed(self, speed):
-        self._speed = speed
+    def setName(self, newName):
+        self._name = newName
+    def setMaxHP(self, newMaxHP): 
+        self._maxHP = newMaxHP       
+    def setSpeed(self, newSpeed): 
+        self._speed = newSpeed       
+    def setAttack(self, newAttack):
+        self._attack = newAttack
+    def setSpecialAttack(self, newSpecialAttack):   
+        self._speicalAttack = newSpecialAttack
+    def setDefense(self, newDefense):
+        self._defense = newDefense
+    def setSpecialDefense(self, newSpecialDefense):
+        self._specialDefense = newSpecialDefense
+    def setMoves(self, moves):                                        
+        self._moves = moves #moves should be a list of four objects                                                                 
+    def setCurrentHP(self, newCurrentHP): 
+        self._currentHP = newCurrentHP       
+    def setLevel(self, newLevel):
+        self._level = newLevel
         
-        
-        
-    def addWeakness(self, weakness):
-        self._weakness.append(weakness)
-    def addStrength(self, strength):
-        self._strength.append(strength)    
-
-    def slow(self, slow):
+        #helper functions   
+    def slow(self, slow): #change this function
         self._speed -= slow
-    def levelUp(self):
+        
+    def levelUp(self): 
         self._level += 1
         self._maxHealth *= 1.2 
         self._speed += 1
-    def confused(self):
+        
+    def confused(self): #change this function
         randomAttack = random.randint(0, len(self._attackNames))
         return self._attackNames[randomAttack], self._attackDmg[randomAttack] 
     
@@ -93,5 +101,5 @@ class Pokemon():
     #attacktingType is expected a string
     #use a getter getType to get the string
     @abstractmethod    
-    def takeDmg(self, dmg, attackingType):
+    def takeDmg(self, dmg, attackingType): #change function
         pass
