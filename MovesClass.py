@@ -22,34 +22,66 @@ pokemonDescriptionList = ['A strange seed was planted on its back at birth. The 
 pokemonPictureList = ['https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png\r', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png\r']
 
 class Moves():
-    def __init__(self, name, accuracy, pp, power, damageType, description, moveType):
-        self._name = name
-        self._accuracy = accuracy
-        self._pp = pp
-        self._power = power
-        self._type = moveType
-        self._description = description
-        self._damageType = damageType
-    def getName(self):
-        return self._name
-    def getAccuracy(self):
-        return self._accuracy
-    def getPP(self):
-        return self._pp
-    def decreasePP(self):
-        if self._pp == 0:
-            self._pp = 0
+    def __init__(self, name, accuracy, powerPoints, power, moveType, description, damageType):
+                                                               
+        self._name = name #string                              
+                                                               
+        self._accuracy = accuracy #float                       
+                                                               
+        self._powerPoints = powerPoints #integer               
+                                                               
+        self._power = power #integer                           
+                                                               
+        self._type = moveType #string                          
+                                                               
+        self._damageType = damageType #string                  
+                                                               
+        self._description = description #string                
+                                                               
+    #toString                                                  
+    def __str__(self):                                         
+        return f"{self._name}, {self._moveType}"               
+                                                               
+    #getters                                                   
+    def getName(self):                                         
+        return self._name                                      
+    def getAccuracy(self):                                     
+        return self._accuracy                                  
+    def getPowerPoints(self):                                  
+        return self._powerPoints                               
+    def getPower(self):                                        
+        return self._power                                     
+    def getType(self):                                         
+        return self._moveType                                  
+    def getDamageType(self):                                   
+        return self._damageType                                
+    def getDescription(self):                                  
+        return self._description                               
+                                                               
+    #setters                                                   
+    def setName(self, newName):                                
+        self._name = newName                                   
+    def setAccuracy(self, newAccuracy):                        
+        self._accuracy = newAccuracy                           
+    def setPowerPoints(self, newPowerPoints):                  
+        self._powerPoints = newPowerPoints                     
+    def setPower(self, newPower):                              
+        self._power = newPower                                 
+    def setType(self, newType):                                
+        self._type = newType                                   
+    def setDamageType(self, newDamageType):                    
+        self._damageType = newDamageType                       
+    def setDescription(self, newDescription):                  
+        self._description = newDescription                     
+                                                               
+    #helper functions                                          
+    def decreasePowerPoints(self):
+        if self._powerPoints == 0:
+            self._powerPoints = 0
         else:
-            self._pp = self._pp - 1
-    def getPower(self):
-        return self._power
-    def getmoveType(self):
-        return self._type
-    def getDescription(self):
-        return self._description
-    def getDamageType(self):
-        return self._damageType
+            self._powerPoints -= 1
 
+#creates and adds objects to empty list movesClassList        
 for i in range(len(movesList)):
     globals()[movesList[i]] =  Moves(movesList[i], accuracyList[i], powerPointList[i], powerList[i], damageClassList[i], moveDescription[i], moveTypeList[i])
     movesClassList.append(globals()[movesList[i]])
